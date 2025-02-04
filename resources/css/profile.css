@@ -1,0 +1,277 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+small {
+    color: gray;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.modal-content h3 {
+    margin-bottom: 10px;
+
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.close {
+    margin-top: -22px;
+    margin-right: -10px;
+    color: #aaa;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Addbutton {
+    margin-bottom: 15px;
+    float: right;
+    background-color: #16a155;
+    color: white;
+    border: none;
+    width: 29%;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.Addbutton:hover {
+    background-color: #268d3e;
+    color: white;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-section .button {
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+    margin-bottom: 5px;
+}
+
+
+.highlightable {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Highlight for empty/invalid inputs */
+.highlightable.invalid {
+    border-color: red;
+    background-color: #ffe5e5;
+}
+
+/* Highlight for valid inputs */
+.highlightable.valid {
+    border-color: green;
+    background-color: #e6ffe6;
+}
+
+.nameInfo1 {
+    width: 25%;
+    float: left;
+}
+
+.nameInfo2 {
+    width: 25%;
+    float: left;
+    margin-left: 4px;
+}
+
+.nameInfo3 {
+    width: 25%;
+    float: left;
+    margin-left: 4px;
+}
+
+.nameInfo4 {
+    width: 23%;
+    float: left;
+    margin-left: 4px;
+}
+
+.nameInfos1 {
+    width: 33%;
+    float: left;
+}
+
+.nameInfos2 {
+    width: 33%;
+    float: left;
+    margin-left: 4px;
+}
+
+.nameInfos3 {
+    width: 33%;
+    float: left;
+    margin-left: 4px;
+}
+
+.update-btn {
+    background-color: #232423;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 15%;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.profile-info1 {
+    float: left;
+    width: 100%;
+    background-color: white;
+    padding: 30px 30px 0px 30px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.profile-info2 {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 30px 30px 0px 30px;
+    background-color: white;
+    margin-top: -20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    float: left;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #101111;
+}
+
+@media (max-width: 780px) {
+    .profile-info1 {
+        float: left;
+        width: 100%;
+
+    }
+
+    .profile-info2 {
+        float: left;
+        width: 100%;
+    }
+
+    .nameInfo1 {
+        width: 100%;
+        float: left;
+    }
+
+    .nameInfo2 {
+        width: 100%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .nameInfo3 {
+        width: 100%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .nameInfo4 {
+        width: 100%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .nameInfos1 {
+        width: 100%;
+        float: left;
+    }
+
+    .nameInfos2 {
+        width: 100%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .nameInfos3 {
+        width: 100%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .profile-info1 .update-btn {
+        width: 96%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .profile-info2 .update-btn {
+        width: 96%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .modal-content h3 {
+        font-size: 14px;
+    }
+
+    .modal-content span {
+        font-size: 13px;
+    }
+
+    .modal-content 
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        font-size: 12px;
+    }
+
+    .content-container h1 {
+        font-size: 20px;
+    }
+}

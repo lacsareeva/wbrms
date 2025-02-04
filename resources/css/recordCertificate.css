@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0; /* Remove padding for printing */
+    box-shadow: none; /* Remove shadow for printing */
+    
+}
+
+.certificate {
+    width: 210mm; /* A4 width */
+    min-height: 297mm; /* A4 height */
+    margin: auto;
+    border: 2px solid black;
+    padding: 10mm; /* Adjust padding to ensure content fits well */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('../image/INDIGENCY.png');
+    background-size: cover; /* Ensures the image covers the entire certificate */
+        background-position: center; /* Centers the background image */
+        background-repeat: no-repeat;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10mm;
+}
+
+.logos {
+    display: flex;
+}
+
+.logo {
+    width: 20mm; /* Adjust logo size for A4 */
+    margin-right: 5mm;
+}
+
+.header-text h1, .header-text h2, .header-text h3 {
+    margin: 2mm;
+    text-align: center;
+}
+
+.certificate-body {
+    display: flex;
+}
+
+.left-column {
+    flex: 50%; /* 40% of the container */
+ 
+    padding-right: 1%;
+    margin-right: 1%;  
+}
+
+.right-column {
+    flex: 100%; /* 60% of the container */
+    padding-top: 20%;
+}
+
+h4 {
+    font-size: 18px; /* Adjust heading size for A4 */
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5mm;
+}
+
+.body-text p {
+    text-align: justify;
+    margin-top: 20mm;
+    margin-bottom: 10mm;
+    
+}
+
+.input-field {
+  
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 16px;
+    margin: 2mm;
+    padding: 2mm;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+            border: 1px solid #57515100; /* Optional: border to make it visible */
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1mm;
+}
+
+.signature-block {
+    text-align: center;
+    margin-top: 5mm;
+}
+
+.signature {
+    width: 30mm; /* Adjust signature size for A4 */
+    display: block;
+    margin: 5mm auto;
+}
+
+@media print {
+    body {
+        box-shadow: none; /* Ensure no shadows are printed */
+    }
+}

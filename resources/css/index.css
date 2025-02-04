@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('../image/manila4-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.sub-container {
+    background-color: rgba(173, 165, 165, 0.6);
+
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    color: rgb(27, 26, 26);
+    text-align: left;
+    padding-bottom: 60px;
+}
+
+.send-btn {
+    width: 120px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: rgb(206, 203, 203);
+    border-radius: 5px;
+    border: .5px solid rgb(77, 75, 75);
+    ;
+}
+
+.send-btn:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.btn {
+    float: right;
+    margin-left: 240px;
+    margin-top: 7px;
+}
+
+.lbl {
+    font-weight: 500;
+}
+
+.email-input {
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 3px;
+    height: 35px;
+    width: 100%;
+    border: 1.5px solid rgb(169, 169, 185);
+    margin-bottom: 10px;
+}
+
+.otpbtn {
+    width: 120px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: rgb(206, 203, 203);
+    border-radius: 5px;
+    border: .5px solid rgb(77, 75, 75);
+    float: right;
+    margin-top: 10px;
+}
+
+.otpbtn:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.resetbtn {
+    width: 220px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(48, 45, 45);
+    color: rgb(206, 203, 203);
+    border-radius: 5px;
+    border: .5px solid rgb(77, 75, 75);
+    float: right;
+    margin-top: 10px;
+}
+
+.resetbtn:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .sub-container {
+        margin: 3px;
+        padding: 15px;
+        width: fit-content;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    .email-input,
+    .send-btn {
+        font-size: 11px;
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+
+    }
+
+
+    .logo img {
+        max-width: 80px;
+        /* Smaller logo */
+        height: 90px;
+    }
+
+    label {
+        width: fit-content;
+        font-size: 12px;
+    }
+
+    .sub-container {
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+
+    .sub-container p {
+        font-size: 14px;
+        width: fit-content;
+    }
+
+    .email-input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .send-btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+}

@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --lato: 'Lato', sans-serif;
+    --light: #F9F9F9;
+    --blue: #3C91E6;
+    --light-blue: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #342E37;
+    --red: #DB504A;
+    --yellow: #FFCE26;
+    --light-yellow: #FFF2C6;
+    --orange: #FD7238;
+    --light-orange: #FFE0D3;
+    --dark-blue: #003366;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body.dark {
+    --light: #0C0C1E;
+    --grey: #060714;
+    --dark: #FBFBFB;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* SIDEBAR */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: var(--dark-blue);
+    z-index: 2000;
+    font-family: var(--lato);
+    transition: .3s ease;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+#sidebar.hide {
+    width: 65px;
+}
+
+#sidebar .brand {
+    font-size: 23px;
+    font-weight: 700;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-blue);
+    z-index: 500;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+
+}
+
+#sidebar .brand {
+    margin-bottom: 30px;
+}
+
+#sidebar .side-menu {
+    width: 100%;
+    margin-top: 75px;
+    -ms-overflow-style: none;
+}
+
+.side-menu ::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+}
+
+#sidebar .side-menu li {
+    height: 45px;
+    border-bottom: 1px solid #004080;
+    margin: 3px;
+    border-radius: 48px;
+    padding: 3px;
+}
+
+#sidebar .side-menu li.active {
+    background-color: var(--dark-blue);
+    position: relative;
+}
+
+#sidebar .side-menu li.active::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: -40px;
+    right: 0;
+    z-index: -1;
+    background-color: var(--dark-blue);
+}
+
+#sidebar .side-menu li.active::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: -40px;
+    right: 0;
+    z-index: -1;
+    background-color: var(--dark-blue);
+}
+
+#sidebar .side-menu li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+#sidebar .side-menu.top li.active a {
+    color: rgb(18, 152, 230);
+}
+
+#sidebar.hide .side-menu li a {
+    width: calc(35px - (3px * 2));
+    transition: width .3s ease;
+
+}
+
+#sidebar .side-menu li a.logout {
+    color: white;
+}
+
+#sidebar .side-menu.top li a:hover {
+    color: rgb(18, 152, 230);
+}
+
+#sidebar .side-menu li a .bx {
+    min-width: calc(55px - ((4px + 6px) * 2));
+    display: flex;
+    justify-content: center;
+}
+
+/* SIDEBAR */
+
+
+/* CONTENT */
+#content {
+    position: relative;
+    width: calc(100% - 280px);
+    left: 280px;
+    transition: .3s ease;
+    border-radius: 10px;
+    background: url('../image/manila4-2.jpg') no-repeat center center/cover;
+
+}
+
+#sidebar.hide~#content {
+    width: calc(100% - 60px);
+    left: 60px;
+    border: none;
+}
+
+/* NAVBAR */
+
+#content .navbar {
+    height: 56px;
+    background-color: rgb(28, 75, 102);
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: var(--lato);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    justify-content: space-between;
+}
+
+#content nav .bx {
+    color: white;
+    font-size: 18px;
+}
+
+/* NAVBAR */
+
+
+/* MAIN */
+main {
+    width: 100%;
+    padding: 36px 24px;
+    color: #333;
+    overflow-y: auto;
+    height: 100vh;
+    background: url('../image/manila4-2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Dropdown hidden by default */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    background-color: rgb(28, 75, 102);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 22%;
+    color: white;
+    white-space: normal;
+    /* Allows text to wrap within the container */
+    word-wrap: break-word;
+    /* Ensures long words break to fit */
+    overflow-wrap: break-word;
+    /* Alternative for breaking long words */
+}
+
+/* Dropdown menu items */
+.profile-dropdown .px-4 {
+    padding: 10px;
+    width: 100%;
+}
+
+.profile-dropdown .mt-3 {
+    padding: 10px;
+    background-color: rgb(33, 91, 124);
+    border-radius: 2px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s ease;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.profile-dropdown a:hover {
+    background-color: rgb(53, 131, 177);
+
+}
+
+.profile-dropdown .border-t {
+    border-top: 1px solid #ddd;
+}
+
+/* Toggle active class to show dropdown */
+.navbar.active .profile-dropdown {
+    display: block;
+}
+
+/* Left: bx-menu icon */
+.navbar i#toggle {
+    font-size: 24px;
+    color: #f3eded;
+    /* Icon color */
+    cursor: pointer;
+    /* Show pointer on hover */
+}
+
+.navbar i#toggle:hover {
+    color: #b3aeae;
+}
+
+/* Right: navbars content */
+.navbars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Spacing between name and chevron icon */
+    font-size: 16px;
+    color: #fcf9f9;
+    /* Text color */
+}
+
+/* Chevron icon styling */
+.navbars i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #f1eded;
+    /* Icon color */
+}
+
+/* Optional: Hover effect for chevron */
+.navbars i:hover {
+    color: #9c9b9b;
+}
+
+/* General Media Queries for Phone Sizes */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: auto;
+    }
+
+    #sidebar {
+        width: 200px;
+    }
+
+    #imglogo {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    #content {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+
+    #sidebar .brand {
+        font-size: 18px;
+    }
+
+    #sidebar .side-menu li a {
+        font-size: 16px;
+    }
+
+    #content nav .nav-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: auto;
+    }
+
+    #sidebar {
+        width: 50px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    #sidebar .brand {
+        font-size: 22px;
+        margin-bottom: -100px;
+        margin-left: 7px;
+    }
+
+    #content {
+        width: calc(100% - 65px);
+        left: 65px;
+    }
+
+    #sidebar .side-menu li a {
+        font-size: 22px;
+        white-space: nowrap;
+        border: none;
+        margin-left: 5px;
+    }
+
+    #sidebar .side-menu li {
+        border: none;
+    }
+
+
+    main {
+        padding: 24px 16px;
+        font-size: 14px;
+    }
+
+    nav .profile-dropdown {
+        width: 50%;
+    }
+
+
+    #imglogo {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .swal-custom-popup {
+        width: 60% !important;
+        /* Take the full width of the screen */
+        max-width: none !important;
+        /* Remove the max-width constraint */
+        padding: 10px !important;
+        /* Reduce padding for smaller screens */
+        margin-left: 25px !important;
+    }
+
+    .swal-custom-icon {
+        font-size: 8px;
+    }
+
+    .swal-custom-title {
+        font-size: 13px !important;
+        /* Smaller title size */
+    }
+
+    .swal-custom-text {
+        font-size: 11px !important;
+    }
+
+    .swal-custom-confirm,
+    .swal-custom-cancel {
+        font-size: 12px !important;
+        padding: 6px 12px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        overflow-x: auto;
+    }
+
+    #sidebar .brand {
+        font-size: 14px;
+        padding: 4px;
+        margin-bottom: -100px;
+        margin-left: 3px;
+    }
+
+    #sidebar .side-menu li a {
+        font-size: 18px;
+    }
+
+    nav .navbars {
+        font-size: 13px;
+    }
+
+    nav .profile-dropdown {
+        width: 90%;
+    }
+
+    .profile-dropdown .px-4 {
+        width: auto;
+    }
+
+
+    #sidebar .side-menu li {
+        border: none;
+    }
+
+    #toggle {
+        color: var(--dark-blue)
+    }
+
+    main {
+        padding: 11px 8px;
+        font-size: 10px;
+    }
+
+
+    #imglogo {
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+
+    }
+
+    #content nav {
+        padding: 0;
+        font-size: 13px;
+
+    }
+}

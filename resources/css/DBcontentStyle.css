@@ -1,0 +1,52 @@
+#datetime {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 10px;
+	position: relative;
+	margin-left:auto;	
+}
+
+.main-content {
+    width: 100%;
+    padding: 30px;
+    background: url('manila4-2.jpg') no-repeat center center/cover;
+    color: #333;
+}
+.stat-box p a{
+    color: white;
+}
+.stat-box p a:hover{
+    border-bottom: 1px solid white;
+}
+
+.time-display {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-box {
+    font-family: Arial, sans-serif;
+    background-color: #08449c;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+.stat-box p {
+    font-size: 1.2em;
+}
+
+.stat-box h2 {
+    font-size: 2.5em;
+    margin: 0;
+}

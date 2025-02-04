@@ -1,0 +1,244 @@
+section .content-container {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+section .table-container {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+}
+
+section .header h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section .table-container th,
+td {
+    border: 1px solid #494848;
+    padding: 10px;
+}
+
+th {
+    background-color: #426aa7;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+.edit-link {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #888;
+    margin-top: 50px;
+    width: 700px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(26, 54, 105);
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 40px;
+}
+
+.close {
+    margin-top: -22px;
+    margin-right: -10px;
+    color: #aaa;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Addbutton {
+    margin-bottom: 15px;
+    float: right;
+    background-color: #215bb3;
+    color: white;
+    border: none;
+    padding: 7px;
+    width: 15%;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Addbutton:hover {
+    background-color: #08449c;
+    color: white;
+}
+
+.form-section {
+    margin-bottom: 15px;
+
+}
+
+.form-section .button {
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+}
+
+textarea {
+    height: 100px;
+}
+
+.table-btn button {
+    margin-left: 1%;
+    padding-right: 10px;
+}
+
+.post-btn {
+    background-color: #285ba7;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 55%;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: .5%;
+    font-weight: bold;
+}
+
+.post-btn:hover {
+    background-color: #062a5f;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.post-btns {
+  
+    color:  #28a745;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.post-btns:hover {
+   border-bottom: 1px solid #218838;
+}
+
+.delete-btns {
+    color: #dc3545;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btns:hover {
+    border-bottom: 1px solid #c82333;
+}
+.sub-main{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.search-area {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.search-area input[type="search"] {
+    padding-left: 35px;
+    height: 29px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.search-area .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+}

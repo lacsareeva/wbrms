@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-image: url('../image/manila4-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headers {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.container {
+    color: white;
+    background: rgb(133, 138, 151);
+    padding: 15px;
+    border-radius: 8px;
+    width: 730px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: absolute;
+
+    height: auto;
+    /* Ensure it expands with content */
+    overflow: visible;
+    /* Prevent content from being hidden */
+}
+
+.container2 {
+    margin-top: 20px;
+}
+
+select {
+    position: relative;
+    /* Ensure the dropdown is properly positioned */
+}
+
+select:focus {
+    box-shadow: none;
+    /* Optional: Removes any default focus shadow */
+}
+
+.sub-header h4 {
+    text-align: center;
+    margin: 4px;
+
+}
+
+.user-info .user-information {
+    font-size: 13px;
+    width: 180px;
+    padding: 4px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+  }
+
+.user-information-suff {
+    font-size: 13px;
+    width: 150px;
+    float: left;
+    padding: 4px;
+    margin-left: 57px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+}
+
+.other-info .other-infos {
+    font-size: 13px;
+    width: 100%;
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+}
+
+.gender1 select {
+    float: left;
+    font-size: 13px;
+    width: 33%;
+    padding: 4px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+
+}
+
+.gender2 input {
+    float: left;
+    font-size: 13px;
+    width: 32%;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    border: 1px solid #3b3a3a;
+
+}
+
+.gender3 select {
+    float: left;
+    font-size: 13px;
+    width: 33%;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    border: 1px solid #3b3a3a;
+
+}
+
+.id-info {
+    float: left;
+    font-size: 12px;
+    width: 48%;
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #3b3a3a;
+}
+
+.id_numberss {
+    float: left;
+    font-size: 13px;
+    width: 48%;
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    margin-left: 13px;
+    border: 1px solid #3b3a3a;
+}
+.custominput {
+    float: left;
+    font-size: 13px;
+    width: 48%;
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+ 
+    border: 1px solid #3b3a3a;
+}
+
+
+.Verification-ID .lbl {
+    margin-top: 8px;
+}
+
+.certify-container {
+    background-color: rgba(53, 51, 51, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.link-btn {
+    float: right;
+    margin-top: 10px;
+}
+
+.register-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.register-link:hover {
+    color:  rgb(22, 16, 16);
+}
+
+.register-btn {
+    background-color: #444;
+    color: white;
+    width: 150px;
+    padding: 6px;
+    border: 1px solid #504f4f;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #1a1818;
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+
+
+#nxt_btn {
+    color: white;
+    background-color: rgb(228, 39, 39);
+    float: right;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 175, 175);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nxt_btn:hover {
+    color: white;
+    background-color: rgb(197, 17, 17);
+}
+
+.highlightable {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Highlight for empty/invalid inputs */
+.highlightable.invalid {
+    border-color: red;
+    background-color: #ffe5e5;
+}
+
+/* Highlight for valid inputs */
+.highlightable.valid {
+    border-color: green;
+    background-color: #e6ffe6;
+}
+
+.error {
+    color: rgb(247, 236, 236);
+    font-size: 12px;
+}
+
+.errors {
+    color: rgb(247, 236, 236);
+    font-size: 12px;
+}
+
+.nameInfo1 {
+    width: 18%;
+    float: left;
+
+}
+
+.nameInfos2 {
+    width: 18%;
+    float: left;
+    margin-left: 57px;
+}
+
+.nameInfos3 {
+    width: 18%;
+    float: left;
+    margin-left: 57px;
+}
+
+.gen {
+    margin-top: -7px;
+}
+
+.birthInfo3 {
+    flex: 3;
+    float: left;
+    margin-left: 5px;
+    width: 189px;
+}
+
+#ImageDetailsContainer {
+    width: 220px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.account-settings-fileinput {
+    display: none;
+}
+
+#profilePictures {
+    width: 200px;
+    height: 70px;
+
+}
+
+.btn-data {
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid #57626e;
+}
+
+.btn-outline-primary {
+    color: #1b1c1d;
+    border-color: #57626e;
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn_label {
+    text-align: center;
+    padding: 3px;
+    font-size: 11px;
+}
+
+.btn_text {
+    text-align: center;
+}
+
+#resetbtn:hover {
+    color: #619bda;
+    border-color: #3c8add;
+    background-color: white;
+}
+
+#resetbtn {
+    margin-left: 56px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.fas.fa-sync-alt:hover {
+    color: #053364;
+    background-color: white;
+}
+
+.fas.fa-sync-alt {
+    font-size: 11px;
+    padding: 6px;
+    color: #007bff;
+}
+
+.fas.fa-arrow-alt-circle-left {
+    font-size: 18px;
+    padding: 6px;
+    font-weight: bold;
+    color: #f4f6f8;
+    margin-top: 8px;
+}
+
+#back_btn {
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-image: url('../image/manila4-2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        width: 93%;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .container1 {
+        float: left;
+        width: 100%;
+    }
+
+    .container2 {
+        float: left;
+        width: 100%;
+    }
+
+
+    .headers h2 {
+        text-align: center;
+    }
+
+    .user-info .nameInfo1 {
+        float: left;
+        width: 100%;
+    }
+
+    .user-info .nameInfos2 {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .user-info .nameInfos3 {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .user-info .nameInfos {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nameInfo1 input[type="text"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nameInfos2 input[type="text"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nameInfos3 input[type="text"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nameInfos input[type="text"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .other-info {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .other-info select {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .other-info input[type="number"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Verification-ID select {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+    .Verification-ID input[type="text"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .Verification-ID-number input[type="number"] {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container2 .imageContents {
+        width: auto;
+        margin-top: 90px;
+    }
+    .imageContents .card-body img{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .btn-data input[type="file"]{
+        width: 100%;
+    }
+    .link-btn {
+        width: 100%;
+        font-size: 13px;
+        
+    }
+    .register-link{
+       padding-bottom: 22px;
+        
+    }
+    .link-btn button {
+        width: 100%;
+        font-size: 13px;
+    }
+
+}

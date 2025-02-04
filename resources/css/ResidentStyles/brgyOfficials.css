@@ -1,0 +1,165 @@
+    /* General Styles */
+
+
+    .container {
+        font-family: sans-serif;
+        width: 90%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: auto;
+    }
+
+    .header {
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: #7f8c8d;
+        padding: 10px;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+    .navbarss{
+   font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .officials-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .official-card {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .official-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .position {
+        font-weight: bold;
+        color: #16a085;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .edit-button {
+        background-color: #e74c3c;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .edit-button:hover {
+        background-color: #c0392b;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            /* Make the container width dynamic for medium screens */
+            padding: 15px;
+        }
+
+        .officials-container {
+            grid-template-columns: repeat(1, 1fr);
+            /* One column for medium screens */
+            gap: 15px;
+            /* Adjust the gap between cards */
+        }
+
+        .official-card {
+            padding: 15px;
+            /* Adjust padding for smaller cards */
+        }
+
+        .official-card img {
+            width: 80px;
+            /* Reduce image size */
+            height: 80px;
+        }
+
+        .position {
+            font-size: 14px;
+        }
+
+        .name {
+            font-size: 14px;
+        }
+
+        .edit-button {
+            font-size: 12px;
+            padding: 8px;
+            /* Smaller padding for buttons */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
+            /* Full width on smaller screens */
+            margin: 0 5px;
+            /* Add some horizontal margin */
+        }
+        .navbarss{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .officials-container {
+            grid-template-columns: 1fr;
+            /* Single column layout for smaller screens */
+        }
+        .headerss{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .official-card {
+            width: 100%;
+            /* Full width for cards */
+            padding: 10px;
+        }
+
+        .official-card img {
+            width: 70px;
+            /* Further reduce image size */
+            height: 70px;
+        }
+        .official-card p {
+         width: 100%;
+         text-align: center;
+        }
+
+        .position {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .names {
+            font-size: 11px;
+            text-align: center;
+            
+        }
+    }
