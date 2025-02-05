@@ -10,7 +10,7 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\Resident\ResidentDashboardController;
 
 Route::get('/', function () {
-    return view('admin/auth/login');
+    return view('resident/auth/login');
 });
 
 
